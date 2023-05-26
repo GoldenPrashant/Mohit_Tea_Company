@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Tea Company</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <!--Bootstrap files .css-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/template/offcanvascss/offcanvas-navbar.css">
+    <!--External CSS File-->
+    <link rel="stylesheet" href="/src/style/index.css">
+</head>
+<body class="conainer-fluid">
+    <!-- header -->
+    <header>
+        <marquee bgcolor="orange" behavior="alternate" class="title" onmouseover="this.stop()" onmouseout="this.start()">
+           Welcome to Mohit Tea Company
+        </marquee>
+    </header>
+
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="#">Mohit Tea Company</a>
+          <button class="navbar-toggler" id="navbarSideCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                    <span class="bi bi-house-fill"></span>Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="bi bi-question-circle-fill"></span>About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="bi bi-heart-fill"></span>Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="bi bi-phone-fill"></span>Contact Us
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Product's</a>
+                <div class="dropdown-menu dropdown-menu-dark">
+                  <a class="dropdown-item" href="/TeaProducts.html" target="_blank">Tea</a>
+                </div>
+
+                  <li><a class="dropdown-item" href="#">Garima tea pkt.</a></li>
+                  <li><a class="dropdown-item" href="#">Other Products</a></li>
+                </d>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button class="dropdown-toggle btn btn-outline-info me-2" data-bs-target="#menu" data-bs-toggle="dropdown">
+                <span class="bi bi-person">Login</span>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-dark" id="menu">
+                <li><a href="/login.html" target="_blank" class="dropdown-item dropdown-item-text"><span class="bi bi-arrow-bar-right me-1"></span>Signin</a></li>
+                <li><a href="/signup.html" target="_blank" class="dropdown-item dropdown-item-text"><span class="bi bi-person-fill-add me-1"></span>SignUp</a></li>
+                <li><a href="/forgetPassword.html" target="_blank" class="dropdown-item dropdown-item-text"><span class="bi bi-unlock-fill me-1"></span>Forget Password</a></li>
+              </ul>
+            </div>
+            <form class="d-flex">
+              <input class="form-control" placeholder="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--Section-->
+    <section>
+      <main>
+        <div class="carousel" id="banner" data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+                <div>
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/images/item-1.jpg" width="100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/item-3.jpg" width="100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/item-4.jpg" width="100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/item-5.jpg" width="100%">
+                    </div>
+                </div>
+
+                <div>
+                    <button data-bs-target="#banner" data-ba-slide="prev" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="carousel-indicators">
+                    <a data-bs-target="#banner" class="active" data-bs-slide-to="0" ></a>
+                    <a data-bs-target="#banner" data-bs-slide-to="1"></a>
+                    <a data-bs-target="#banner" data-bs-slide-to="2"></a>
+                    <a data-bs-target="#banner" data-bs-slide-to="3"></a>
+                </div>
+            </div>
+        </div>
+      </main>
+    </section>
+    
+
+    <!--Bootstrap files .js-->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/template/offcanvasjs/offcanvas-navbar.js"></script>
+</body>
+</html>

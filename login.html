@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <!--External file .css-->
+    <link rel="stylesheet" href="/src/style/signup.css">
+    <!--Bootstrap files .css-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div style="margin-left:25%; height:400px;" class="bg-warning w-50 mt-5 border border-dark rounded-5 shadow">
+        <div class="text-center mt-3">
+            <img src="/images/Userid.jpeg" height="10%" width="10%">
+        </div>
+        <div style="margin-left:25%;" class="mt-5 w-50">
+            <form>
+                <div class="input-group">
+                    <span class="bi bi-person-fill"></span>
+                    <input type="text" placeholder="Userid" class="form-control">
+                </div>
+                <div class="input-group mt-4">
+                    <span class="bi bi-unlock-fill"></span>
+                    <input type="password" placeholder="password" class="form-control">
+                </div>
+            </form>
+            <div>
+                <div class="mt-4">
+                    <button style="margin-left:20%;" onclick="alert('You are successfully login')" class="btn btn-success">
+                        Login
+                    </button>
+                    <button style="margin-left:20%;" type="reset" onclick="alert('form will reset')" class="btn btn-danger">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
